@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="1">
+
+  <testsuite name="assertOK"
+    errors="1" failures="1" hostname="" id="" package="assertOK" skipped="0"
+    tests="1" time="20.16" timestamp="">
+  
+    <testcase name="Ecoisa Website Test with .ok()" classname="assertOK" time="10.08" assertions="2">
+
+      <failure message="Error while running &#34;getAttribute&#34; command: [TypeError] result.value.includes is not a function">TypeError: Error while running &#34;getAttribute&#34; command: [TypeError] result.value.includes is not a function
+    at NightwatchAPI.&lt;anonymous&gt; (C:\Users\Mayank Verma\OneDrive\Desktop\testing\nightwatch\examples\basic\assertOK.js:19:22)</failure>
+
+    
+    <error message="Error while running &#34;getAttribute&#34; command: [TypeError] result.value.includes is not a function" type="error"><![CDATA[
+    TypeError: Error while running &#34;getAttribute&#34; command: [TypeError] result.value.includes is not a function
+    at NightwatchAPI.&lt;anonymous&gt; (C:\Users\Mayank Verma\OneDrive\Desktop\testing\nightwatch\examples\basic\assertOK.js:19:22)
+    at Object.apply (C:\Users\Mayank Verma\OneDrive\Desktop\testing\node_modules\nightwatch\lib\api\_loaders\_base-loader.js:411:29)
+    at GetAttribute.complete (C:\Users\Mayank Verma\OneDrive\Desktop\testing\node_modules\nightwatch\lib\element\command.js:240:27)
+    at GetAttribute.handleElementError (C:\Users\Mayank Verma\OneDrive\Desktop\testing\node_modules\nightwatch\lib\api\element-commands\_baseElementCommand.js:181:17)
+    at GetAttribute.elementNotFound (C:\Users\Mayank Verma\OneDrive\Desktop\testing\node_modules\nightwatch\lib\api\element-commands\_baseElementCommand.js:109:17)
+    at GetAttribute.elementLocateError (C:\Users\Mayank Verma\OneDrive\Desktop\testing\node_modules\nightwatch\lib\element\command.js:195:19)
+    at Object.errorHandler (C:\Users\Mayank Verma\OneDrive\Desktop\testing\node_modules\nightwatch\lib\api\element-commands\_baseElementCommand.js:94:23)
+    at PeriodicPromise.runAction (C:\Users\Mayank Verma\OneDrive\Desktop\testing\node_modules\nightwatch\lib\utils\periodic-promise.js:64:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An error occurred while running .getAttribute() command on &lt;heading&gt;: Timed out while waiting for element &#34;heading&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\Mayank Verma\OneDrive\Desktop\testing\nightwatch\examples\basic\assertOK.js:17
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     15 | 
+     16 | // artibute to chechk weather the word &#34;like&#34; present in the head of the page
+     17 |     browser.getAttribute(&#34;heading&#34;, &#34;class&#34;, (result) =&gt; { 
+     18 |       browser.assert.ok(
+     19 |         result.value.includes(&#34;Like&#34;),
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
