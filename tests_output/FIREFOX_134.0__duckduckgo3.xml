@@ -1,29 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="1"
             failures="1"
-            tests="2">
+            tests="5">
 
   <testsuite name="duckduckgo3"
-    errors="1" failures="1" hostname="" id="" package="duckduckgo3" skipped="3"
-    tests="2" time="23.01" timestamp="">
+    errors="1" failures="1" hostname="" id="" package="duckduckgo3" skipped="0"
+    tests="5" time="23.13" timestamp="">
   
-    <testcase name="should pass when asserting true value with .ok()" classname="duckduckgo3" time="0.01000" assertions="2">
+    <testcase name="should pass when asserting true value with .ok()" classname="duckduckgo3" time="0.01200" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="should fail when asserting false value with .ok()" classname="duckduckgo3" time="0.07600" assertions="2">
+    <testcase name="should fail when asserting false value with .ok()" classname="duckduckgo3" time="0.02700" assertions="2">
 
-      <failure message="Failed [ok]:  not true ko {
-  message: &#39;Testing falsy value&#39;,
-  expected: &#39;a truthy value&#39;,
-  actual: false
-} - expected &#34;null&#34; but got: &#34;null&#34; (14ms)">  message: &#39;Testing falsy value&#39;,
-  expected: &#39;a truthy value&#39;,
-  actual: false
-}</failure>
+    
+
+    
+    </testcase>
+  
+    <testcase name="should handle complex assertions with .ok()" classname="duckduckgo3" time="0.01100" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should correctly handle .not.ok() assertions" classname="duckduckgo3" time="0.01600" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="should show proper error messages for failed assertions" classname="duckduckgo3" time="0.06900" assertions="1">  <failure message="Failed [ok]: ([object Object]) - expected &#34;true&#34; but got: &#34;false&#34; (7ms)">    at DescribeInstance.&lt;anonymous&gt; (C:\Users\Mayank Verma\OneDrive\Desktop\testing\nightwatch\examples\basic\duckduckgo3.js:56:8)</failure>
 
     
     </testcase>
@@ -37,23 +55,6 @@
 
     
 
-  
-    
-    <testcase
-      name="should handle complex assertions with .ok()" classname="duckduckgo3">
-      <skipped />
-    </testcase>
-    
-    <testcase
-      name="should correctly handle .not.ok() assertions" classname="duckduckgo3">
-      <skipped />
-    </testcase>
-    
-    <testcase
-      name="should show proper error messages for failed assertions" classname="duckduckgo3">
-      <skipped />
-    </testcase>
-    
   
   </testsuite>
 </testsuites>

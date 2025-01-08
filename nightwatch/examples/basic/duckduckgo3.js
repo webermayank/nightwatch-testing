@@ -17,7 +17,7 @@ describe("Assertion Examples Test Suite", function () {
 
   it("should fail when asserting false value with .ok()", function (browser) {
     browser.assert.not
-      .ok(false, "Testing the value to be not truthy")
+      .ok(false)
       // Test with a custom message showing expected vs actual
       .assert.not.ok(false, {
         message: "Testing falsy value",
